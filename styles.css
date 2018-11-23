@@ -1,8 +1,8 @@
 /* Global Layout Set-up */
-* { 
+* {
   box-sizing: border-box;
 }
-  
+
 body {
   margin: 0;
   padding: 0;
@@ -56,11 +56,11 @@ a:hover {
 }
 
 header {
-  text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/background-image-1.jpg') no-repeat top center;
   background-size: cover;
   overflow: hidden;
-  padding-top: 60px;
+  padding-top: 90px;
+  padding-bottom: 150px;
 }
 header {
   line-height: 1.5;
@@ -77,16 +77,16 @@ header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
 .tag {
-  background-color: #efefef;
+  background-color: white;
   color: black;
   padding: 10px;
   border-radius: 5px;
   display: table;
   margin: 10px auto;
-} 
+}
 .location {
-  background-color: #222;
-  color: yellow;
+  background-color: white;
+  color: black;
 }
 .card {
   margin: 30px;
@@ -110,14 +110,15 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: black;
   color: white;
   padding: 5px 10px;
   margin: 2px;
+
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: orange;
 }
 
 footer {
@@ -151,14 +152,11 @@ a.social {
   opacity: .4;
   transition: all .5s;
 }
-a.twitter {
-  background-image: url(images/twitter.svg);
-}
 a.linkedin {
-  background-image: url(images/linkedin.svg);
+  background-image: url(images/logo-linkedin.svg);
 }
 a.github {
-  background-image: url(images/github.svg);
+  background-image: url(images/logo-github.svg);
 }
 a.social:hover {
   opacity: 1;
@@ -169,10 +167,10 @@ a.social:hover {
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
-  
+
   .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
+      display: flex;
       max-width: 1200px;
       -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -205,3 +203,9 @@ a.social:hover {
 
 }
 
+.picture {
+  height: 600px;
+  width: 500px;
+  margin-top: 60px;
+  margin-left:20px;
+}
